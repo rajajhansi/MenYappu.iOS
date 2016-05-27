@@ -40,6 +40,35 @@ namespace MenYappu
                 var randomIndex = new Random().Next(0, seergal.Count);
                 TextWord.Text = seergal[randomIndex].Seer;
             };
+			ClearButton.TouchUpInside += (object sender, EventArgs e) =>
+			{
+				TextWord.Text = "";
+			};
+			CheckAnswerButton.TouchUpInside += async (object sender, EventArgs e) =>
+			{
+				var jsonData = new JObject();
+				jsonData.Add("inputText", TextWord.Text);
+
+				var result =
+					await
+					MenYappuRestServiceWrapper.CalculateMathiraiAsync(
+						string.Format(MenYappuServiceUrls.BaseUrlFormat, MenYappuServiceUrls.MathiraiCount),
+						JsonConvert.SerializeObject(jsonData));
+
+				var resultJsonObject = JObject.Parse(result);
+
+				// Check if the entered Mathirai Count is the same as the one returned by MenYappu REST service
+//				if (TextMathiraiCount.Text == (string) resultJsonObject["totalMathiraiCount"])
+//				{
+//					ResultTextView.Text = "சரியான விடை";
+//				}
+//				else
+//				{
+//					var correctAnswer = string.Format("சரியான மாத்திரை எண்ணிக்கை: {0}",
+//						(string) resultJsonObject["totalMathiraiCount"]);
+//					ResultTextView.Text = "தவறான விடை\r\n" + correctAnswer;
+//				}
+			};
         }
     }
 }

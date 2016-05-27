@@ -469,78 +469,6 @@
                                     <rect key="frame" x="12" y="109" width="377" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="648" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="141" width="46" height="30"/>
-                                <size key="titleShadowOffset" width="0" height="0"/>
-                                <state key="normal" title="மாதிரி">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="231" width="46" height="30"/>
-                                    <mask key="constraints">
-                                        <include reference="669"/>
-                                    </mask>
-                                </variation>
-                                <constraints>
-                                    <constraint id="669" firstAttribute="width" constant="46"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="669"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="650" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="141" width="46" height="30"/>
-                                <size key="titleShadowOffset" width="0" height="0"/>
-                                <state key="normal" title="நீக்குக">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="102" y="231" width="61" height="30"/>
-                                    <mask key="constraints">
-                                        <include reference="670"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="UIButton610_TouchUpInside:" destination="644" id="671" eventType="touchUpInside"/>
-                                </connections>
-                                <constraints>
-                                    <constraint id="670" firstAttribute="width" constant="61"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="670"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="652" translatesAutoresizingMaskIntoConstraints="NO">
-                                <rect key="frame" x="20" y="141" width="46" height="30"/>
-                                <size key="titleShadowOffset" width="0" height="0"/>
-                                <state key="normal" title="சரி பார்த்திடுக">
-                                    <color key="titleShadowColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
-                                </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="194" y="231" width="111" height="30"/>
-                                    <mask key="constraints">
-                                        <include reference="672"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="UIButton610_TouchUpInside:" destination="674" id="673" eventType="touchUpInside"/>
-                                </connections>
-                                <constraints>
-                                    <constraint id="672" firstAttribute="width" constant="111"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="672"/>
-                                    </mask>
-                                </variation>
-                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="683" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="12" y="88" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -549,7 +477,7 @@
                                     <rect key="frame" x="12" y="180" width="377" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="சொல்" lineBreakMode="tailTruncation" minimumFontSize="10" id="686" translatesAutoresizingMaskIntoConstraints="NO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="சொல்" lineBreakMode="tailTruncation" minimumFontSize="10" id="686" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="12" y="80" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -559,7 +487,7 @@
                                     <rect key="frame" x="12" y="80" width="65" height="21"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="மாத்திரை எண்ணிக்கை" lineBreakMode="tailTruncation" minimumFontSize="10" id="687" translatesAutoresizingMaskIntoConstraints="NO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="மாத்திரை எண்ணிக்கை" lineBreakMode="tailTruncation" minimumFontSize="10" id="687" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="12" y="80" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -569,7 +497,7 @@
                                     <rect key="frame" x="12" y="147" width="234" height="21"/>
                                 </variation>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="688" translatesAutoresizingMaskIntoConstraints="NO">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="688" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="12" y="291" width="160" height="240"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -578,7 +506,7 @@
                                     <rect key="frame" x="12" y="325" width="377" height="132"/>
                                 </variation>
                             </textView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="முடிவு" lineBreakMode="tailTruncation" minimumFontSize="10" id="689" translatesAutoresizingMaskIntoConstraints="NO">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="முடிவு" lineBreakMode="tailTruncation" minimumFontSize="10" id="689" translatesAutoresizingMaskIntoConstraints="NO" fixedFrame="YES">
                                 <rect key="frame" x="12" y="80" width="42" height="21"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -588,78 +516,78 @@
                                     <rect key="frame" x="12" y="283" width="73" height="21"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="698" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="231" width="46" height="30"/>
+                                <state key="normal" title="மாதிரி">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="231" width="46" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="699" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="231" width="46" height="30"/>
+                                <state key="normal" title="நீக்குக">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="106" y="231" width="71" height="30"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="700" translatesAutoresizingMaskIntoConstraints="NO">
+                                <rect key="frame" x="20" y="231" width="46" height="30"/>
+                                <state key="normal" title="சரி பார்த்திடுக">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" colorSpace="calibratedWhite" white="1" alpha="1"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="214" y="231" width="101" height="30"/>
+                                </variation>
+                            </button>
                         </subviews>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="656"/>
                                 <exclude reference="646"/>
-                                <exclude reference="648"/>
-                                <exclude reference="650"/>
-                                <exclude reference="652"/>
                                 <exclude reference="683"/>
                                 <exclude reference="686"/>
                                 <exclude reference="687"/>
                                 <exclude reference="688"/>
                                 <exclude reference="689"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="657"/>
-                                <exclude reference="658"/>
-                                <exclude reference="659"/>
-                                <exclude reference="660"/>
-                                <exclude reference="661"/>
-                                <exclude reference="662"/>
-                                <exclude reference="684"/>
-                                <exclude reference="685"/>
+                                <exclude reference="698"/>
+                                <exclude reference="699"/>
+                                <exclude reference="700"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="656"/>
                                 <include reference="646"/>
-                                <include reference="648"/>
-                                <include reference="650"/>
-                                <include reference="652"/>
                                 <include reference="683"/>
                                 <include reference="686"/>
                                 <include reference="687"/>
                                 <include reference="688"/>
                                 <include reference="689"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="657"/>
-                                <include reference="658"/>
-                                <include reference="659"/>
-                                <include reference="660"/>
-                                <include reference="661"/>
-                                <include reference="662"/>
-                                <include reference="684"/>
-                                <include reference="685"/>
+                                <include reference="698"/>
+                                <include reference="699"/>
+                                <include reference="700"/>
                             </mask>
                         </variation>
-                        <constraints>
-                            <constraint id="657" firstItem="648" firstAttribute="leading" secondItem="655" secondAttribute="leading" constant="20"/>
-                            <constraint id="658" firstItem="648" firstAttribute="top" secondItem="655" secondAttribute="top" constant="141"/>
-                            <constraint id="659" firstItem="650" firstAttribute="leading" secondItem="655" secondAttribute="leading" constant="102"/>
-                            <constraint id="660" firstItem="650" firstAttribute="top" secondItem="655" secondAttribute="top" constant="141"/>
-                            <constraint id="661" firstItem="655" firstAttribute="trailing" secondItem="652" secondAttribute="trailing" constant="95"/>
-                            <constraint id="662" firstItem="652" firstAttribute="top" secondItem="655" secondAttribute="top" constant="141"/>
-                            <constraint id="684" firstItem="650" firstAttribute="centerY" secondItem="648" secondAttribute="centerY"/>
-                            <constraint id="685" firstItem="652" firstAttribute="centerY" secondItem="648" secondAttribute="centerY"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="TextWord" destination="646" id="645"/>
-                        <outlet property="SampleButton" destination="648" id="647"/>
-                        <outlet property="ClearButton" destination="650" id="649"/>
-                        <outlet property="CheckAnswerButton" destination="652" id="651"/>
                         <outlet property="TextMathiraiCount" destination="683" id="name-outlet-683"/>
                         <outlet property="ResultTextView" destination="688" id="name-outlet-688"/>
+                        <outlet property="CheckAnswerButton" destination="700" id="name-outlet-700"/>
+                        <outlet property="ClearButton" destination="699" id="name-outlet-699"/>
+                        <outlet property="SampleButton" destination="698" id="name-outlet-698"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="677" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="225" y="15"/>
+            <point key="canvasLocation" x="329" y="-14"/>
         </scene>
     </scenes>
     <resources>

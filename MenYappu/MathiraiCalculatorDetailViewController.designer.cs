@@ -38,10 +38,6 @@ namespace MenYappu
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextField TextWord { get; set; }
 
-		[Action ("UIButton610_TouchUpInside:")]
-		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void UIButton610_TouchUpInside (UIButton sender);
-
 		void ReleaseDesignerOutlets ()
 		{
 			if (CheckAnswerButton != null) {
