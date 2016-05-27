@@ -59,7 +59,9 @@ namespace MenYappu
                 }
                 else
                 {
-                    ResultTextView.Text = "தவறான விடை";
+                    var correctAnswer = string.Format("சரியான மாத்திரை எண்ணிக்கை: {0}",
+                        (string) resultJsonObject["totalMathiraiCount"]);
+                    ResultTextView.Text = "தவறான விடை\r\n" + correctAnswer;
                 }
             };
         }
