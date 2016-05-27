@@ -9,7 +9,7 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace MenYappu_V1
+namespace MenYappu
 {
 	[Register ("VenpaaDetailViewController")]
 	partial class VenpaaDetailViewController

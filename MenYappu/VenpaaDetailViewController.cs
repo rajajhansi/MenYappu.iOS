@@ -4,12 +4,13 @@ using System.CodeDom.Compiler;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using MenYappu;
 using MenYappu.Core;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using UIKit;
 
-namespace MenYappu_V1
+namespace MenYappu
 {
 	partial class VenpaaDetailViewController : UIViewController
 	{
@@ -26,10 +27,7 @@ namespace MenYappu_V1
 
             ParseButton.TouchUpInside += async (object sender, EventArgs e) =>
             {
-
-
-                string url = "http://menyappu.local/api/prosody";
-                var result = await ParseVenpaaAsync(url, PaaText.Text);
+                var result = await ParseVenpaaAsync(MenYappuServiceUrls.BaseUrl, PaaText.Text);
                 //Create Alert
                 var okCancelAlertController = UIAlertController.Create("Venpaa Parser", result, UIAlertControllerStyle.Alert);
                 //Add Actions

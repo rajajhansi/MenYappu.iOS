@@ -6,9 +6,9 @@
     <ProjectGuid>{2B78EC7F-CB17-450F-B0A4-E2404A6CD6BD}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MenYappu_V1</RootNamespace>
+    <RootNamespace>MenYappu</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>MenYappuV1</AssemblyName>
+    <AssemblyName>MenYappu</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -90,14 +90,24 @@
     <Compile Include="GameTableViewController.designer.cs">
       <DependentUpon>GameTableViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="LetterTypeFinderDetailViewController.cs" />
+    <Compile Include="LetterTypeFinderDetailViewController.designer.cs">
+      <DependentUpon>LetterTypeFinderDetailViewController.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="GettingStarted.Xamarin" />
     <None Include="Info.plist" />
+    <Compile Include="MathiraiCalculatorDetailViewController.cs" />
+    <Compile Include="MathiraiCalculatorDetailViewController.designer.cs">
+      <DependentUpon>MathiraiCalculatorDetailViewController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenYappuServiceUrls.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Services\MenYappuRestServiceWrapper.cs" />
     <Compile Include="VenpaaDetailViewController.cs" />
     <Compile Include="VenpaaDetailViewController.designer.cs">
       <DependentUpon>VenpaaDetailViewController.cs</DependentUpon>

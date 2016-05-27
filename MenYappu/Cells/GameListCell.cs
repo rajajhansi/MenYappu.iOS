@@ -21,7 +21,7 @@ namespace MenYappu
         public GameListCell(NSString cellId): base(UITableViewCellStyle.Default, cellId)
         {
             SelectionStyle = UITableViewCellSelectionStyle.Gray;
-            ContentView.BackgroundColor = UIColor.FromRGB(254, 199, 101);
+            ContentView.BackgroundColor = UIColor.FromRGB(188, 219, 247);
 
             imageView  = new UIImageView();
 
@@ -32,17 +32,16 @@ namespace MenYappu
                 BackgroundColor = UIColor.Clear
             };
 
-            descriptionLabel = new UILabel
-            {
-                Font = UIFont.FromName("AmericanTypewriter", 12f),
-                TextColor = UIColor.FromRGB(0, 0x78, 0xD7),
-                //TextAlignment = UITextAlignment.Center,
-                BackgroundColor = UIColor.Clear
-            };
-
-            ContentView.Add(nameLabel);
-            ContentView.Add(descriptionLabel);
+            //descriptionLabel = new UILabel
+            //{
+            //    Font = UIFont.FromName("AmericanTypewriter", 12f),
+            //    TextColor = UIColor.FromRGB(0, 0x78, 0xD7),
+            //    //TextAlignment = UITextAlignment.Center,
+            //    BackgroundColor = UIColor.Clear
+            //};
             ContentView.Add(imageView);
+            ContentView.Add(nameLabel);
+            //ContentView.Add(descriptionLabel);
         }
 
         public override void LayoutSubviews()
@@ -51,14 +50,14 @@ namespace MenYappu
 
             imageView.Frame = new RectangleF((float)ContentView.Bounds.Width - 63, 5, 33, 33);
             nameLabel.Frame = new RectangleF(5, 4, (float)ContentView.Bounds.Width - 63, 25);
-            descriptionLabel.Frame = new RectangleF(200, 10, 100, 20);
+            //descriptionLabel.Frame = new RectangleF(200, 10, 100, 20);
         }
 
         public void UpdateCell(string caption, string subtitle, UIImage image)
         {
             imageView.Image = image;
             nameLabel.Text = caption;
-            descriptionLabel.Text = subtitle;
+            //descriptionLabel.Text = subtitle;
         }
     }
 }

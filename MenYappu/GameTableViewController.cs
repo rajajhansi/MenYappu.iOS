@@ -27,15 +27,44 @@ namespace MenYappu_V1
 
 	    public async void GameSelected(Game selectedGame)
 	    {
-	        VenpaaDetailViewController venpaaDetailViewController =
-                this.Storyboard.InstantiateViewController("VenpaaDetailViewController") as VenpaaDetailViewController;
-	        if (venpaaDetailViewController != null)
-	        {
-	            venpaaDetailViewController.ModalTransitionStyle = UIModalTransitionStyle.PartialCurl;
-	            venpaaDetailViewController.SelectedGame = selectedGame;
 
-	            await PresentViewControllerAsync(venpaaDetailViewController, true);
+	        switch (selectedGame.GameId)
+	        {
+                case 1:
+                    LetterTypeFinderDetailViewController letterTypeFinderDetailViewController =
+                        this.Storyboard.InstantiateViewController(IdToDetailViewControllersMap.GameIdToGameDetailViewControllers[selectedGame.GameId])
+                        as LetterTypeFinderDetailViewController;
+                    if (letterTypeFinderDetailViewController != null)
+                    {
+                        letterTypeFinderDetailViewController.ModalTransitionStyle = UIModalTransitionStyle.PartialCurl;
+                        letterTypeFinderDetailViewController.SelectedGame = selectedGame;
+
+                        await PresentViewControllerAsync(letterTypeFinderDetailViewController, true);
+                    }
+                    break;
+                case 2:
+                    MathiraiCalculatorDetailViewController mathiraiCalculatorDetailViewController =
+                        this.Storyboard.InstantiateViewController(IdToDetailViewControllersMap.GameIdToGameDetailViewControllers[selectedGame.GameId])
+                        as MathiraiCalculatorDetailViewController;
+                    if (mathiraiCalculatorDetailViewController != null)
+                    {
+                        mathiraiCalculatorDetailViewController.ModalTransitionStyle = UIModalTransitionStyle.PartialCurl;
+                        mathiraiCalculatorDetailViewController.SelectedGame = selectedGame;
+
+                        await PresentViewControllerAsync(mathiraiCalculatorDetailViewController, true);
+                    }
+                    break;
+
 	        }
+	        //VenpaaDetailViewController venpaaDetailViewController =
+         //       this.Storyboard.InstantiateViewController("VenpaaDetailViewController") as VenpaaDetailViewController;
+	        //if (venpaaDetailViewController != null)
+	        //{
+	        //    venpaaDetailViewController.ModalTransitionStyle = UIModalTransitionStyle.PartialCurl;
+	        //    venpaaDetailViewController.SelectedGame = selectedGame;
+
+	        //    await PresentViewControllerAsync(venpaaDetailViewController, true);
+	        //}
 	    }
 	    //public override void PrepareForSegue(UIStoryboardSegue segue, NSObject sender)
 	    //{
